@@ -31,3 +31,8 @@ getDetails(book, propToCheck);
 * To fix it: declare type of __propToCheck__ or narrow the type by making the variable a __constant__.
 </details>
 
+### Question 2
+
+```typescript
+const a1 = 
+```
