@@ -23,9 +23,9 @@ getDetails(book, propToCheck);
 ```
 
 <details>
-    <summary>Show answer</summary>
-    
-    
+    <summary><strong>Show answer</strong></summary>
+    <br />
+
 * The __propToCheck__ variable is a __string__, because of "let" it can get other string values.
 * Type __'title' | 'desc' | 'author'__ is more specific, it expects one of three possible strings.
 * To fix it: declare type of __propToCheck__ or narrow the type by making the variable a __constant__.
