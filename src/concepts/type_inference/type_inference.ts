@@ -31,25 +31,3 @@ const myVar3: Product = {
   name: "Product 1",
   price: 12.99,
 };
-
-interface Book {
-  title: string;
-  desc: string;
-  author: string;
-}
-
-function getDetails(book: Book, prop: "title" | "desc" | "author") {
-  return book[prop];
-}
-
-const book: Book = {
-  title: "My Title",
-  desc: "My Description",
-  author: "The Author",
-};
-
-const propToCheck = "author";
-
-// this call, why?
-
-getDetails(book, propToCheck);

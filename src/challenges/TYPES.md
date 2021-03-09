@@ -17,7 +17,7 @@ const book: Book = {
 
 let propToCheck = "author";
 
-// this call won't compile, why?
+// this won't compile, why?
 
 getDetails(book, propToCheck);
 ```
@@ -25,7 +25,9 @@ getDetails(book, propToCheck);
 <details>
     <summary>Show answer</summary>
     
-    * The __propToCheck__ variable is a **string**, because of "let" it can get other string values.
-    * Type _'title' | 'desc' | 'author'_ is more specific, it expects one of three possible strings.
-    * To fix it: declare type of __propToCheck__ or narrow the type by making the variable a constant.
+    
+* The __propToCheck__ variable is a __string__, because of "let" it can get other string values.
+* Type __'title' | 'desc' | 'author'__ is more specific, it expects one of three possible strings.
+* To fix it: declare type of __propToCheck__ or narrow the type by making the variable a __constant__.
 </details>
+
