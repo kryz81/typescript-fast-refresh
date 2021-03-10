@@ -1,7 +1,5 @@
 # Type Aliases
 
-**Changing the variable type to more specific one**
-
 ### Good to know
 
 * Class can implement interface and type alias
