@@ -1,8 +1,7 @@
-# Type domains
+# Type assertions
 
-**Set of possible values of a type**
+**Set more specific type even if TS infers another type**
 
 ### Good to know
 
-* __never__ has empty set
-* __literal type__ has exactly one element
+* Type assertions are removed by the compiler and there is no runtime type checking
