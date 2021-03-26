@@ -36,5 +36,13 @@ function getArea(shape: MyShape) {
   }
 
   // TS knows it's a MySquare here
-  return shape.sideLength ** 2;
+  if (shape.kind === "mysquare") {
+    return shape.sideLength ** 2;
+  }
+
+  // additional check
+  // if a new type will be added to MyShape this will throw an error:
+  // for example: type MyShape = MyCirlce | MySquare | { kind: "a" };
+  const check: never = shape;
+  return check;
 }
