@@ -7,8 +7,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('build') {
       steps {
+        tool(name: 'nodejs', type: 'nodejs')
         sh 'npm run build'
       }
     }
