@@ -1,14 +1,15 @@
 pipeline {
-  agent {
-    node {
-      label 'build'
-    }
-
-  }
+  agent any
   stages {
-    stage('build') {
+    stage('msg') {
       steps {
         echo 'it works'
+      }
+    }
+
+    stage('') {
+      steps {
+        sh 'npm run build'
       }
     }
 
