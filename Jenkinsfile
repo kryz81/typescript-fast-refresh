@@ -1,14 +1,14 @@
 pipeline {
   agent {
     node {
-      label 'Build'
+      label 'build'
     }
 
   }
   stages {
-    stage('Build') {
+    stage('build') {
       steps {
-        sh 'npm run build'
+        echo 'it works'
       }
     }
 
